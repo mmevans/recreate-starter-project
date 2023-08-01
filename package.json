@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "name": "recreate-starter-project",
+  "version": "1.0.0",
+  "description": "This is my attempt to recreate the starter project from stratch and document the steps I took in order to do so.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmevans/recreate-starter-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmevans/recreate-starter-project/issues"
+  },
+  "homepage": "https://github.com/mmevans/recreate-starter-project#readme",
+  "workspaces": {
+    "packages": [
+      "services/*"
+    ]
+  }
+}
