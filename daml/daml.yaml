@@ -1,0 +1,17 @@
+sdk-version: 2.6.4
+name: starter-project
+source: tests
+version: 0.0.1
+dependencies:
+  - daml-prim
+  - daml-stdlib
+  - daml-script
+build-options:
+  - --include=models/daml
+  - --include=init/daml
+  - --ghc-option=-Werror
+  - --ghc-option=-Wunused-top-binds
+  - --ghc-option=-Wunused-matches
+  - --ghc-option=-Wmissing-signatures
+  - --ghc-option=-Wunused-local-binds
+  - --ghc-option=-Wincomplete-uni-patterns
