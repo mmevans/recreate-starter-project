@@ -1,0 +1,26 @@
+10:49:09,778 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version ?
+10:49:09,797 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [/Users/michaelevans/.daml/sdk/2.6.4/daml-sdk/json-api-logback.xml] at [file:/Users/michaelevans/.daml/sdk/2.6.4/daml-sdk/json-api-logback.xml]
+10:49:09,829 |-WARN in IfNestedWithinSecondPhaseElementSC - <if> elements cannot be nested within an <appender>, <logger> or <root> element
+10:49:09,829 |-WARN in IfNestedWithinSecondPhaseElementSC - See also http://logback.qos.ch/codes.html#nested_if_element
+10:49:09,834 |-WARN in IfNestedWithinSecondPhaseElementSC - Element <appender> at line 3 contains a nested <if> element at line 4
+10:49:09,851 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [STDOUT]
+10:49:09,851 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+10:49:09,906 |-INFO in ch.qos.logback.core.model.processor.conditional.IfModelHandler - Condition [isDefined("LOG_FORMAT_JSON")] evaluated to false on line 4
+10:49:09,910 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+10:49:09,921 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [io.netty] to WARN
+10:49:09,921 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [io.grpc.netty] to WARN
+10:49:09,921 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [ch.qos.logback] to WARN
+10:49:09,922 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+10:49:09,922 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[ROOT]
+10:49:09,922 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@7d446ed1 - End of configuration.
+10:49:09,922 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@12d2ce03 - Registering current configuration as safe fallback point
+
+2023-08-03 15:49:10.215 [main] INFO  com.daml.http.Main - Config(ledgerHost=localhost, ledgerPort=6865, address=127.0.0.1, httpPort=7575, portFile=None, packageReloadInterval=5 seconds, packageMaxInboundMessageSize=None, maxInboundMessageSize=9283730, tlsConfig=TlsConfiguration(false,None,None,None,None,REQUIRE,false,None), jdbcConfig=None, staticContentConfig=None, allowNonHttps=false, wsConfig=None, nonRepudiationCertificateFile=None, nonRepudiationPrivateKeyFile=None, nonRepudiationPrivateKeyAlgorithm=None, surrogateTpIdCacheMaxEntries=None), context: {instance_uuid: "4fdf0517-1697-467e-bb9c-14e9fe6f02a4"} 
+2023-08-03 15:49:10.365 [http-json-ledger-api-akka.actor.default-dispatcher-4] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started 
+2023-08-03 15:49:10.488 [http-json-ledger-api-akka.actor.default-dispatcher-4] INFO  com.daml.http.HttpService - HTTP Server pre-startup, context: {instance_uuid: "4fdf0517-1697-467e-bb9c-14e9fe6f02a4"} 
+2023-08-03 15:49:10.592 [http-json-ledger-api-akka.actor.default-dispatcher-4] INFO  com.daml.http.LedgerClient - Attempting to connect to the ledger localhost:6865 (600 attempts), context: {instance_uuid: "4fdf0517-1697-467e-bb9c-14e9fe6f02a4"} 
+2023-08-03 15:49:10.788 [http-json-ledger-api-akka.actor.default-dispatcher-4] INFO  com.daml.http.LedgerClient - Attempt 1/600 succeeded!, context: {instance_uuid: "4fdf0517-1697-467e-bb9c-14e9fe6f02a4"} 
+2023-08-03 15:49:10.789 [http-json-ledger-api-akka.actor.default-dispatcher-4] INFO  com.daml.http.LedgerClient - Attempting to connect to the ledger localhost:6865 (600 attempts), context: {instance_uuid: "4fdf0517-1697-467e-bb9c-14e9fe6f02a4"} 
+2023-08-03 15:49:10.791 [http-json-ledger-api-akka.actor.default-dispatcher-4] INFO  com.daml.http.LedgerClient - Attempt 1/600 succeeded!, context: {instance_uuid: "4fdf0517-1697-467e-bb9c-14e9fe6f02a4"} 
+2023-08-03 15:49:10.791 [http-json-ledger-api-akka.actor.default-dispatcher-4] INFO  com.daml.http.HttpService - contractDao: None, context: {instance_uuid: "4fdf0517-1697-467e-bb9c-14e9fe6f02a4"} 
+2023-08-03 15:49:11.140 [http-json-ledger-api-akka.actor.default-dispatcher-5] INFO  com.daml.http.Main - Started server: (ServerBinding(/127.0.0.1:7575),None), context: {instance_uuid: "4fdf0517-1697-467e-bb9c-14e9fe6f02a4"} 

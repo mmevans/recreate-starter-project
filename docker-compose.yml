@@ -1,5 +1,15 @@
 version: '3.7'
 
+x-http-json-api: &http-json-api
+  image: 859076940395.dkr.ecr.us-east-2.amazonaws.com/http-json:2.6.1
+  build:
+    context: './services/http-json-api'
+  restart: always
+  command:
+    - --allow-insecure-tokens
+  expose:
+    - '4004'
+
 services:
   backend:
     container_name: backend
@@ -8,3 +18,9 @@ services:
       - SERVER_PORT=3000
     ports:
       - "3000:3000"
+
+  starter-json-api:
+    <<: *http-json-api
+    container_name: starter-json-api
+    ports:
+      - '10004:4004'

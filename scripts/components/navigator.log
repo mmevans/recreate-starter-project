@@ -1,0 +1,35 @@
+daml-helper: Received ExitFailure (-15) when running
+Raw command: java -Dlogback.configurationFile=/Users/michaelevans/.daml/sdk/2.6.4/daml-sdk/navigator-logback.xml -jar /Users/michaelevans/.daml/sdk/2.6.4/daml-sdk/daml-sdk.jar navigator server --port 7500 --feature-user-management=false
+
+10:49:09,058 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version ?
+10:49:09,079 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [/Users/michaelevans/.daml/sdk/2.6.4/daml-sdk/navigator-logback.xml] at [file:/Users/michaelevans/.daml/sdk/2.6.4/daml-sdk/navigator-logback.xml]
+10:49:09,105 |-WARN in ch.qos.logback.core.joran.action.ParamAction - <param> element is deprecated in favor of a more direct syntax.At line 18
+10:49:09,105 |-WARN in ch.qos.logback.core.joran.action.ParamAction - For details see http://logback.qos.ch/codes.html#param
+10:49:09,121 |-WARN in ch.qos.logback.core.model.processor.AppenderModelHandler - Appender named [STDOUT] not referenced. Skipping further processing.
+10:49:09,121 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [STDERR]
+10:49:09,122 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+10:49:09,127 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+10:49:09,132 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [FILE]
+10:49:09,132 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+10:49:09,132 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+10:49:09,142 |-INFO in ch.qos.logback.core.FileAppender[FILE] - File property is set to [navigator.log]
+10:49:09,143 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [ASYNC]
+10:49:09,143 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.classic.AsyncAppender]
+10:49:09,146 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to ch.qos.logback.classic.AsyncAppender[ASYNC]
+10:49:09,146 |-INFO in ch.qos.logback.classic.AsyncAppender[ASYNC] - Attaching appender named [FILE] to AsyncAppender.
+10:49:09,146 |-INFO in ch.qos.logback.classic.AsyncAppender[ASYNC] - Setting discardingThreshold to 51
+10:49:09,147 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [user-facing-logs] to INFO
+10:49:09,148 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [user-facing-logs] to true
+10:49:09,148 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDERR] to Logger[user-facing-logs]
+10:49:09,149 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+10:49:09,149 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ASYNC] to Logger[ROOT]
+10:49:09,149 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@1603cd68 - End of configuration.
+10:49:09,149 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@9ebe38b - Registering current configuration as safe fallback point
+
+   _  __          _           __
+  / |/ /__ __  __(_)__ ____ _/ /____  ____
+ /    / _ `/ |/ / / _ `/ _ `/ __/ _ \/ __/
+/_/|_/\_,_/|___/_/\_, /\_,_/\__/\___/_/
+                 /___/
+Version 2.6.4
+Frontend running at http://localhost:7500.
