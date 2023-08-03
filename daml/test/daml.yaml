@@ -1,15 +1,14 @@
 sdk-version: 2.6.1
-name: models
-source: models/src
+name: test
+source: src
 version: 0.0.1
 dependencies:
   - daml-prim
   - daml-stdlib
   - daml-script
+data-dependencies:
+  - ../.daml/dist/models-0.0.1.dar
 build-options:
-  - --include=models/src
-  - --include=init/src
-  - --include=test/src
   - --target=1.15
   - --ghc-option=-Werror
   - --ghc-option=-Wunused-top-binds

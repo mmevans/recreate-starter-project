@@ -1,0 +1,7 @@
+module Tests where
+import Daml.Script
+
+test : Script ()
+test = script do
+  _p <- allocateParty "party"
+  pure()
